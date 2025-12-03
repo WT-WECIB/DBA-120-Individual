@@ -136,7 +136,7 @@ Now add 4 endpoints:
 4. Click **"Create Template"**
 5. Click **"Create Handler"**
 6. Method: `GET`
-7. Source Type: `Collection Query`
+7. Source Type: `Query`
 8. Source: Copy-paste:
 ```sql
 SELECT post_id, user_id, text, created_at FROM posts ORDER BY created_at DESC
@@ -147,14 +147,17 @@ Repeat 3 more times for:
 
 **Endpoint 2: Comments**
 - URI Template: `comments/`
+- Source Type: `Collection Query`
 - SQL: `SELECT comment_id, post_id, user_id, text, created_at FROM comments ORDER BY created_at DESC`
 
 **Endpoint 3: Reactions**
 - URI Template: `reactions/`
+- Source Type: `Collection Query`
 - SQL: `SELECT reaction_id, post_id, user_id, reaction_type, created_at FROM reactions`
 
 **Endpoint 4: Users**
 - URI Template: `users/`
+- Source Type: `Collection Query`
 - SQL: `SELECT user_id, username, created_at FROM users`
 
 ### Step 6: Test REST endpoints
