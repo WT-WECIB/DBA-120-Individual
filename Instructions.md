@@ -119,10 +119,11 @@ You see a leaderboard of top posters. **Page 4 Done** ✓
 ### Step 5: Create REST API Endpoints
 
 1. In APEX, click **"SQL Workshop"** → **"RESTful Services"**
-2. Click **"Create"**
-3. Module Name: `social`
-4. Base Path: `/social/`
-5. Click **"Create Module"**
+2. Select **"Modules"**  on the left side
+3. Click **"Create Module"**
+4. Module Name: `social`
+5. Base Path: `/social/`
+6. Click **"Create Module"**
 
 ---
 
@@ -132,10 +133,10 @@ Now add 4 endpoints:
 1. Click the `social` module you created
 2. Click **"Create Resource"**
 3. URI Template: `posts/`
-4. Click **"Create Resource"**
+4. Click **"Create Template"**
 5. Click **"Create Handler"**
 6. Method: `GET`
-7. Source Type: `SQL`
+7. Source Type: `Collection Query`
 8. Source: Copy-paste:
 ```sql
 SELECT post_id, user_id, text, created_at FROM posts ORDER BY created_at DESC
