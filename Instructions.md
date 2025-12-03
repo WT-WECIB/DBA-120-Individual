@@ -387,10 +387,13 @@ If you see this ✓ → **Part 3 Done**
 
 ### Step 1: Create a new post in APEX
 
-1. Open your APEX app in browser
-2. Click **"Create Post"** page
-3. Fill in text: "Test post from APEX"
-4. Click **"Create"**
+1. Go to Apex -> App Builder
+2. Select your social_media app
+3. Click **"Create Post"** page (bottom middle)
+4. Fill in text: "Test post from APEX"
+5. Click the green play button to go to the site (top right)
+6. Login if prompted
+7. Create a post
 
 ### Step 2: Run Python script again in Codespaces
 
@@ -401,17 +404,6 @@ python3 analytics.py
 
 **Verify**: Your new post appears in the stats
 
-### Step 3: Add a like
-
-In APEX, create a new like (or ask instructor how to add one via the UI)
-
-### Step 4: Run Python again
-
-```bash
-python3 analytics.py
-```
-
-**Verify**: Like count increased
 
 ---
 
