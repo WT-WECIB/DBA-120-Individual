@@ -131,7 +131,7 @@ Now add 4 endpoints:
 
 **Endpoint 1: Posts**
 1. Click the `social` module you created
-2. Click **"Create Resource"**
+2. Go to the **Resource Templates** tab Click -> **"Create Template"**
 3. URI Template: `posts/`
 4. Click **"Create Template"**
 5. Click **"Create Handler"**
