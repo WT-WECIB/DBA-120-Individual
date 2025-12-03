@@ -43,11 +43,9 @@ Open your APEX environment in browser: `https://oracleapex.com/ords/...`
 
 ### Step 2: Create an app
 
-Click **"Create"** → Select **"New Application"** → Click **"Create Application"**
+Click **Drop down arrow in App Builder** → **"Create"** → Enter **social_media** in **Name** field → Click **"Create Application"**
 
 Name it: `social_media`
-
-Click **"Create Application"** (bottom right)
 
 ### Step 3: Create 4 Pages
 
@@ -55,12 +53,12 @@ You will create 4 pages. For EACH page, follow same steps:
 
 **Page 1: Feed (List View)**
 
-1. Click **"Create Page"** (at top)
+1. Click **"Create Page"** 
 2. Select **"Interactive Report"**
 3. Name it: `Feed`
-4. Source Table: `POSTS`
-5. Click **"Create Page"**
-6. Wait 10 seconds, click **"Save and Run"** (button in top right)
+4. Source Table: `POSTS`  
+5. Click **"Create Page"**  
+6. Wait 10 seconds, click **"Save and Run"** (green play button on top right)
 
 You will see a table with all posts. **Page 1 Done** 
 
@@ -68,12 +66,13 @@ You will see a table with all posts. **Page 1 Done**
 
 **Page 2: Create Post (Form)**
 
-1. Click **"Create Page"** (top left)
+1. Go back to App main page and click **"Create Page"**
 2. Select **"Form"**
 3. Name it: `Create Post`
 4. Table: `POSTS`
-5. Click **"Create Page"**
-6. Wait, click **"Save and Run"**
+5. Click **Next**  
+6. Click **"Create Page"**
+7. Wait, click **"Save and Run"**
 
 You will see a form. Fill it out and click **"Create"**. The post appears on Feed page. **Page 2 Done** ✓
 
@@ -99,9 +98,9 @@ You see all comments. **Page 3 Done** ✓
 3. Name it: `Leaderboard`
 4. Click **"Create Page"**
 
-5. In the middle, click **"Create Region"**
-6. Select **"Classic Report"**
-7. Name it: `Top Posters`
+5. In the bottom middle, make sure the **Regions** tab is selected
+6. Select **"Classic Report"** and drag it into the middle section (right below Layout Page Search Help)  
+7. Fill out the info on the right: Name it: `Top Posters`, change Type: to SQL Query
 8. SQL Query: Copy-paste this:
 
 ```sql
